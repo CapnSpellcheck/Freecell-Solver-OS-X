@@ -1,0 +1,246 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeBuildStyle = 4A9504CCFFE6A4B311CA0CBA /* Development */;
+		activeExecutable = DF8FCD2F082F277D00766B42 /* FreeCell Solver */;
+		activeTarget = 29B97326FDCFA39411CA2CEA /* FreeCell Solver */;
+		codeSenseManager = DF8FCD3F082F279800766B42 /* Code sense */;
+		executables = (
+			DF8FCD2F082F277D00766B42 /* FreeCell Solver */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 255813173;
+			PBXWorkspaceStateSaveDate = 255813173;
+		};
+		perUserProjectItems = {
+			DFB696510F3F663B003D3866 /* PBXBookmark */ = DFB696510F3F663B003D3866 /* PBXBookmark */;
+			DFB6965E0F400113003D3866 /* PBXTextBookmark */ = DFB6965E0F400113003D3866 /* PBXTextBookmark */;
+		};
+		sourceControlManager = DF8FCD3E082F279800766B42 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97326FDCFA39411CA2CEA /* FreeCell Solver */ = {
+		activeExec = 0;
+		executables = (
+			DF8FCD2F082F277D00766B42 /* FreeCell Solver */,
+		);
+	};
+	DF8FCD2F082F277D00766B42 /* FreeCell Solver */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "FreeCell Solver";
+		sourceDirectories = (
+		);
+	};
+	DF8FCD3E082F279800766B42 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	DF8FCD3F082F279800766B42 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	DFB696510F3F663B003D3866 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = F51450550690B6FB01A80104 /* AppController.mm */;
+	};
+	DFB6965E0F400113003D3866 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F51450550690B6FB01A80104 /* AppController.mm */;
+		name = "AppController.mm: 306";
+		rLen = 0;
+		rLoc = 10360;
+		rType = 0;
+		vrLen = 2040;
+		vrLoc = 200;
+	};
+	F512D63906926D9C01A80104 /* FCSFileHandler.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 3276}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 2522}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F512E0DC06BB734E01A80104 /* FreeCellGame.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 5292}}";
+			sepNavSelRange = "{11832, 7}";
+			sepNavVisRect = "{{0, 4538}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F514289A06977B0201A80104 /* DeckView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F514289B06977B0201A80104 /* DeckView.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {729, 6272}}";
+			sepNavSelRange = "{427, 0}";
+			sepNavVisRect = "{{0, 386}, {729, 769}}";
+			sepNavWindowFrame = "{{15, 0}, {768, 827}}";
+		};
+	};
+	F51450500690B6E301A80104 /* PreferenceController.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {711, 1918}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 1418}, {711, 500}}";
+			sepNavWindowFrame = "{{15, 269}, {750, 558}}";
+		};
+	};
+	F51450540690B6FB01A80104 /* AppController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 966}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F51450550690B6FB01A80104 /* AppController.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 8316}}";
+			sepNavSelRange = "{10360, 0}";
+			sepNavVisRect = "{{0, 122}, {837, 769}}";
+			sepNavWindowFrame = "{{98, 5}, {876, 827}}";
+		};
+	};
+	F51451490690C04F01A80104 /* Card.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F514514A0690C04F01A80104 /* CardMove.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F514514B0690C04F01A80104 /* CardSuit.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F514514E0690C04F01A80104 /* Location.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F514515A0690D46001A80104 /* FreeCells.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F514515B0690D46001A80104 /* Solve FreeCell.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {926, 9450}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 8696}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F514515C0690D46001A80104 /* Tableau.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F516D62806A22C6B01A80104 /* SolveTask.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 754}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 754}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F516D62906A22C6B01A80104 /* SolveTask.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 769}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {837, 769}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F52360B10696574E01A80104 /* CardManager.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {837, 1176}}";
+			sepNavSelRange = "{1118, 2}";
+			sepNavVisRect = "{{0, 0}, {837, 769}}";
+			sepNavWindowFrame = "{{15, 0}, {876, 827}}";
+		};
+	};
+	F544515106953F1601A80104 /* SolverView.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {729, 15246}}";
+			sepNavSelRange = "{33932, 1}";
+			sepNavVisRect = "{{0, 0}, {729, 769}}";
+			sepNavWindowFrame = "{{15, 0}, {768, 827}}";
+		};
+	};
+}

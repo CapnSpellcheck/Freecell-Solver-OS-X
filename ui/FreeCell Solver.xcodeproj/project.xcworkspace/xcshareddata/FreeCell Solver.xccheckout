@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32AF3B93-6245-4F3D-8E4A-5B547B32BED0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FreeCell Solver</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>d4c2f44c-1904-4dbd-ac75-7b680cd7f486++505</key>
+		<string>http://subversion.assembla.com/svn/fcsolve-mac/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ui/FreeCell Solver.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>d4c2f44c-1904-4dbd-ac75-7b680cd7f486++505</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>d4c2f44c-1904-4dbd-ac75-7b680cd7f486++505</key>
+		<string>http://subversion.assembla.com/svn/fcsolve-mac</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://subversion.assembla.com/svn/fcsolve-mac/trunk/ui/FreeCell%20Solver.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>d4c2f44c-1904-4dbd-ac75-7b680cd7f486++505</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>d4c2f44c-1904-4dbd-ac75-7b680cd7f486++505</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fcsolve-mac</string>
+		</dict>
+	</array>
+</dict>
+</plist>

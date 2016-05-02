@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                changeBackgroundColor = id; 
+                changeEnableDebugLog = id; 
+                changeLogFileMode = id; 
+                changeLogFilePath = id; 
+            }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bgColorWell = NSColorWell; 
+                btnChooseLogFile = NSButton; 
+                btnSave = NSButton; 
+                chkEnableLog = NSButton; 
+                optLogMode = NSMatrix; 
+                txtLogFilePath = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9EF5D601A9D97E5007ED0E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EF5D5F1A9D97E5007ED0E7 /* main.m */; };
+		B9EF5D621A9D97E5007ED0E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9EF5D611A9D97E5007ED0E7 /* Images.xcassets */; };
+		B9EF5D711A9D97E6007ED0E7 /* Freecell_SolverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EF5D701A9D97E6007ED0E7 /* Freecell_SolverTests.m */; };
+		B9EF5D7A1A9D99FE007ED0E7 /* PreferenceController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F51450500690B6E301A80104 /* PreferenceController.mm */; };
+		B9EF5D7B1A9D99FE007ED0E7 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F51450550690B6FB01A80104 /* AppController.mm */; };
+		B9EF5D7C1A9D99FE007ED0E7 /* CardManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F52360B10696574E01A80104 /* CardManager.mm */; };
+		B9EF5D7D1A9D99FE007ED0E7 /* DeckView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F514289B06977B0201A80104 /* DeckView.mm */; };
+		B9EF5D7E1A9D99FE007ED0E7 /* SolverView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F544515106953F1601A80104 /* SolverView.mm */; };
+		B9EF5D7F1A9D99FE007ED0E7 /* SolveTask.mm in Sources */ = {isa = PBXBuildFile; fileRef = F516D62906A22C6B01A80104 /* SolveTask.mm */; };
+		B9EF5D801A9D9A0B007ED0E7 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F51451590690D46001A80104 /* Debug.cpp */; };
+		B9EF5D811A9D9A0B007ED0E7 /* FreeCells.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F514515A0690D46001A80104 /* FreeCells.cpp */; };
+		B9EF5D821A9D9A0B007ED0E7 /* Solve FreeCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F514515B0690D46001A80104 /* Solve FreeCell.cpp */; };
+		B9EF5D831A9D9A0B007ED0E7 /* Tableau.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F514515C0690D46001A80104 /* Tableau.cpp */; };
+		B9EF5D841A9D9A0B007ED0E7 /* FCSFileHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = F512D63906926D9C01A80104 /* FCSFileHandler.mm */; };
+		B9EF5D851A9D9A0B007ED0E7 /* FreeCellGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F512E0DC06BB734E01A80104 /* FreeCellGame.cpp */; };
+		B9EF5D861A9D9A23007ED0E7 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DD578A069FD07701A80104 /* pause.png */; };
+		B9EF5D871A9D9A23007ED0E7 /* backward.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DD578C069FD07F01A80104 /* backward.png */; };
+		B9EF5D881A9D9A23007ED0E7 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DD5786069FCADF01A80104 /* forward.png */; };
+		B9EF5D891A9D9A29007ED0E7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F520DC350693F05A01A80104 /* Credits.rtf */; };
+		B9EF5D8A1A9D9A2F007ED0E7 /* MainWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainWindow.nib */; };
+		B9EF5D8B1A9D9A2F007ED0E7 /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = F51C8BA1068BF24E01A80104 /* Preferences.nib */; };
+		B9EF5D8D1A9D9A69007ED0E7 /* card_1c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F51428A60697896301A80104 /* card_1c.gif */; };
+		B9EF5D8E1A9D9A69007ED0E7 /* card_1d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F51428A70697896301A80104 /* card_1d.gif */; };
+		B9EF5D8F1A9D9A69007ED0E7 /* card_1h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F51428A80697896301A80104 /* card_1h.gif */; };
+		B9EF5D901A9D9A69007ED0E7 /* card_1s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F51428A90697896301A80104 /* card_1s.gif */; };
+		B9EF5D911A9D9A69007ED0E7 /* card_2c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9ED0693F60301A80104 /* card_2c.gif */; };
+		B9EF5D921A9D9A69007ED0E7 /* card_2d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9EE0693F60301A80104 /* card_2d.gif */; };
+		B9EF5D931A9D9A69007ED0E7 /* card_2h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9EF0693F60301A80104 /* card_2h.gif */; };
+		B9EF5D941A9D9A69007ED0E7 /* card_2s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F00693F60301A80104 /* card_2s.gif */; };
+		B9EF5D951A9D9A69007ED0E7 /* card_3c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F10693F60301A80104 /* card_3c.gif */; };
+		B9EF5D961A9D9A69007ED0E7 /* card_3d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F20693F60301A80104 /* card_3d.gif */; };
+		B9EF5D971A9D9A69007ED0E7 /* card_3h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F30693F60301A80104 /* card_3h.gif */; };
+		B9EF5D981A9D9A69007ED0E7 /* card_3s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F40693F60301A80104 /* card_3s.gif */; };
+		B9EF5D991A9D9A69007ED0E7 /* card_4c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F50693F60301A80104 /* card_4c.gif */; };
+		B9EF5D9A1A9D9A69007ED0E7 /* card_4d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F60693F60301A80104 /* card_4d.gif */; };
+		B9EF5D9B1A9D9A69007ED0E7 /* card_4h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F70693F60301A80104 /* card_4h.gif */; };
+		B9EF5D9C1A9D9A69007ED0E7 /* card_4s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F80693F60301A80104 /* card_4s.gif */; };
+		B9EF5D9D1A9D9A69007ED0E7 /* card_5c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9F90693F60301A80104 /* card_5c.gif */; };
+		B9EF5D9E1A9D9A69007ED0E7 /* card_5d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9FA0693F60301A80104 /* card_5d.gif */; };
+		B9EF5D9F1A9D9A69007ED0E7 /* card_5h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9FB0693F60301A80104 /* card_5h.gif */; };
+		B9EF5DA01A9D9A69007ED0E7 /* card_5s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9FC0693F60301A80104 /* card_5s.gif */; };
+		B9EF5DA11A9D9A69007ED0E7 /* card_6c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9FD0693F60301A80104 /* card_6c.gif */; };
+		B9EF5DA21A9D9A69007ED0E7 /* card_6d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9FE0693F60301A80104 /* card_6d.gif */; };
+		B9EF5DA31A9D9A69007ED0E7 /* card_6h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592A9FF0693F60301A80104 /* card_6h.gif */; };
+		B9EF5DA41A9D9A69007ED0E7 /* card_6s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA000693F60301A80104 /* card_6s.gif */; };
+		B9EF5DA51A9D9A69007ED0E7 /* card_7c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA010693F60301A80104 /* card_7c.gif */; };
+		B9EF5DA61A9D9A69007ED0E7 /* card_7d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA020693F60301A80104 /* card_7d.gif */; };
+		B9EF5DA71A9D9A69007ED0E7 /* card_7h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA030693F60301A80104 /* card_7h.gif */; };
+		B9EF5DA81A9D9A69007ED0E7 /* card_7s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA040693F60301A80104 /* card_7s.gif */; };
+		B9EF5DA91A9D9A69007ED0E7 /* card_8c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA050693F60301A80104 /* card_8c.gif */; };
+		B9EF5DAA1A9D9A69007ED0E7 /* card_8d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA060693F60301A80104 /* card_8d.gif */; };
+		B9EF5DAB1A9D9A69007ED0E7 /* card_8h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA070693F60301A80104 /* card_8h.gif */; };
+		B9EF5DAC1A9D9A69007ED0E7 /* card_8s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA080693F60301A80104 /* card_8s.gif */; };
+		B9EF5DAD1A9D9A69007ED0E7 /* card_9c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA090693F60301A80104 /* card_9c.gif */; };
+		B9EF5DAE1A9D9A69007ED0E7 /* card_9d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA0A0693F60301A80104 /* card_9d.gif */; };
+		B9EF5DAF1A9D9A69007ED0E7 /* card_9h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA0B0693F60301A80104 /* card_9h.gif */; };
+		B9EF5DB01A9D9A69007ED0E7 /* card_9s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F592AA0C0693F60301A80104 /* card_9s.gif */; };
+		B9EF5DB11A9D9A69007ED0E7 /* card_10c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F514287C069778B901A80104 /* card_10c.gif */; };
+		B9EF5DB21A9D9A69007ED0E7 /* card_10d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F514287D069778B901A80104 /* card_10d.gif */; };
+		B9EF5DB31A9D9A69007ED0E7 /* card_10h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F514287E069778B901A80104 /* card_10h.gif */; };
+		B9EF5DB41A9D9A69007ED0E7 /* card_10s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F514287F069778B901A80104 /* card_10s.gif */; };
+		B9EF5DB51A9D9A69007ED0E7 /* card_11c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142880069778B901A80104 /* card_11c.gif */; };
+		B9EF5DB61A9D9A69007ED0E7 /* card_11d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142881069778B901A80104 /* card_11d.gif */; };
+		B9EF5DB71A9D9A69007ED0E7 /* card_11h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142882069778B901A80104 /* card_11h.gif */; };
+		B9EF5DB81A9D9A69007ED0E7 /* card_11s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142883069778B901A80104 /* card_11s.gif */; };
+		B9EF5DB91A9D9A69007ED0E7 /* card_12c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142884069778B901A80104 /* card_12c.gif */; };
+		B9EF5DBA1A9D9A69007ED0E7 /* card_12d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142885069778B901A80104 /* card_12d.gif */; };
+		B9EF5DBB1A9D9A69007ED0E7 /* card_12h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142886069778B901A80104 /* card_12h.gif */; };
+		B9EF5DBC1A9D9A69007ED0E7 /* card_12s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142887069778B901A80104 /* card_12s.gif */; };
+		B9EF5DBD1A9D9A69007ED0E7 /* card_13c.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142888069778B901A80104 /* card_13c.gif */; };
+		B9EF5DBE1A9D9A69007ED0E7 /* card_13d.gif in Resources */ = {isa = PBXBuildFile; fileRef = F51DBA3D069BACD301A80104 /* card_13d.gif */; };
+		B9EF5DBF1A9D9A69007ED0E7 /* card_13h.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5142889069778B901A80104 /* card_13h.gif */; };
+		B9EF5DC01A9D9A69007ED0E7 /* card_13s.gif in Resources */ = {isa = PBXBuildFile; fileRef = F514288A069778B901A80104 /* card_13s.gif */; };
+		B9EF5DC11A9D9A80007ED0E7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9EF5D6B1A9D97E6007ED0E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9EF5D571A9D97E5007ED0E7;
+			remoteInfo = "Freecell Solver";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* MainWindow.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MainWindow.nib; path = English.lproj/MainWindow.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		B9EF5D581A9D97E5007ED0E7 /* Freecell Solver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freecell Solver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9EF5D5B1A9D97E5007ED0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9EF5D5F1A9D97E5007ED0E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9EF5D611A9D97E5007ED0E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B9EF5D6A1A9D97E6007ED0E7 /* Freecell SolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Freecell SolverTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9EF5D6F1A9D97E6007ED0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9EF5D701A9D97E6007ED0E7 /* Freecell_SolverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Freecell_SolverTests.m; sourceTree = "<group>"; };
+		B9EF5DC21A9D9E10007ED0E7 /* Solve FreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Solve FreeCell.h"; sourceTree = "<group>"; };
+		F50AA3E106CF3F2701A80104 /* MoveScorePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveScorePair.h; path = ../libfreecell/MoveScorePair.h; sourceTree = SOURCE_ROOT; };
+		F512D63806926D9C01A80104 /* FCSFileHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSFileHandler.h; sourceTree = "<group>"; };
+		F512D63906926D9C01A80104 /* FCSFileHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCSFileHandler.mm; sourceTree = "<group>"; };
+		F512E0DC06BB734E01A80104 /* FreeCellGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FreeCellGame.cpp; path = ../libfreecell/FreeCellGame.cpp; sourceTree = SOURCE_ROOT; };
+		F512E0DE06BB735801A80104 /* FreeCellGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeCellGame.h; path = ../libfreecell/FreeCellGame.h; sourceTree = SOURCE_ROOT; };
+		F514287C069778B901A80104 /* card_10c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_10c.gif; path = cards/card_10c.gif; sourceTree = "<group>"; };
+		F514287D069778B901A80104 /* card_10d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_10d.gif; path = cards/card_10d.gif; sourceTree = "<group>"; };
+		F514287E069778B901A80104 /* card_10h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_10h.gif; path = cards/card_10h.gif; sourceTree = "<group>"; };
+		F514287F069778B901A80104 /* card_10s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_10s.gif; path = cards/card_10s.gif; sourceTree = "<group>"; };
+		F5142880069778B901A80104 /* card_11c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_11c.gif; path = cards/card_11c.gif; sourceTree = "<group>"; };
+		F5142881069778B901A80104 /* card_11d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_11d.gif; path = cards/card_11d.gif; sourceTree = "<group>"; };
+		F5142882069778B901A80104 /* card_11h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_11h.gif; path = cards/card_11h.gif; sourceTree = "<group>"; };
+		F5142883069778B901A80104 /* card_11s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_11s.gif; path = cards/card_11s.gif; sourceTree = "<group>"; };
+		F5142884069778B901A80104 /* card_12c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_12c.gif; path = cards/card_12c.gif; sourceTree = "<group>"; };
+		F5142885069778B901A80104 /* card_12d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_12d.gif; path = cards/card_12d.gif; sourceTree = "<group>"; };
+		F5142886069778B901A80104 /* card_12h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_12h.gif; path = cards/card_12h.gif; sourceTree = "<group>"; };
+		F5142887069778B901A80104 /* card_12s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_12s.gif; path = cards/card_12s.gif; sourceTree = "<group>"; };
+		F5142888069778B901A80104 /* card_13c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_13c.gif; path = cards/card_13c.gif; sourceTree = "<group>"; };
+		F5142889069778B901A80104 /* card_13h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_13h.gif; path = cards/card_13h.gif; sourceTree = "<group>"; };
+		F514288A069778B901A80104 /* card_13s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_13s.gif; path = cards/card_13s.gif; sourceTree = "<group>"; };
+		F514289A06977B0201A80104 /* DeckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckView.h; sourceTree = "<group>"; };
+		F514289B06977B0201A80104 /* DeckView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DeckView.mm; sourceTree = "<group>"; };
+		F51428A60697896301A80104 /* card_1c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_1c.gif; path = cards/card_1c.gif; sourceTree = "<group>"; };
+		F51428A70697896301A80104 /* card_1d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_1d.gif; path = cards/card_1d.gif; sourceTree = "<group>"; };
+		F51428A80697896301A80104 /* card_1h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_1h.gif; path = cards/card_1h.gif; sourceTree = "<group>"; };
+		F51428A90697896301A80104 /* card_1s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_1s.gif; path = cards/card_1s.gif; sourceTree = "<group>"; };
+		F51450500690B6E301A80104 /* PreferenceController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PreferenceController.mm; sourceTree = "<group>"; };
+		F51450510690B6E301A80104 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		F51450540690B6FB01A80104 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		F51450550690B6FB01A80104 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		F51451490690C04F01A80104 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../libfreecell/Card.h; sourceTree = SOURCE_ROOT; };
+		F514514A0690C04F01A80104 /* CardMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMove.h; path = ../libfreecell/CardMove.h; sourceTree = SOURCE_ROOT; };
+		F514514B0690C04F01A80104 /* CardSuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardSuit.h; path = ../libfreecell/CardSuit.h; sourceTree = SOURCE_ROOT; };
+		F514514C0690C04F01A80104 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Debug.h; path = ../libfreecell/Debug.h; sourceTree = SOURCE_ROOT; };
+		F514514D0690C04F01A80104 /* FreeCells.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeCells.h; path = ../libfreecell/FreeCells.h; sourceTree = SOURCE_ROOT; };
+		F514514E0690C04F01A80104 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = ../libfreecell/Location.h; sourceTree = SOURCE_ROOT; };
+		F514514F0690C04F01A80104 /* Tableau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tableau.h; path = ../libfreecell/Tableau.h; sourceTree = SOURCE_ROOT; };
+		F51451590690D46001A80104 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Debug.cpp; path = ../libfreecell/Debug.cpp; sourceTree = SOURCE_ROOT; };
+		F514515A0690D46001A80104 /* FreeCells.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FreeCells.cpp; path = ../libfreecell/FreeCells.cpp; sourceTree = SOURCE_ROOT; };
+		F514515B0690D46001A80104 /* Solve FreeCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "Solve FreeCell.cpp"; path = "../libfreecell/Solve FreeCell.cpp"; sourceTree = SOURCE_ROOT; };
+		F514515C0690D46001A80104 /* Tableau.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tableau.cpp; path = ../libfreecell/Tableau.cpp; sourceTree = SOURCE_ROOT; };
+		F516D62806A22C6B01A80104 /* SolveTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolveTask.h; sourceTree = "<group>"; };
+		F516D62906A22C6B01A80104 /* SolveTask.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SolveTask.mm; sourceTree = "<group>"; };
+		F51C8BA2068BF24E01A80104 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
+		F51DBA3D069BACD301A80104 /* card_13d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_13d.gif; path = cards/card_13d.gif; sourceTree = "<group>"; };
+		F520DC360693F05A01A80104 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F52360B00696574E01A80104 /* CardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardManager.h; sourceTree = "<group>"; };
+		F52360B10696574E01A80104 /* CardManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardManager.mm; sourceTree = "<group>"; };
+		F544514E06953DB001A80104 /* UIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
+		F544515006953F1601A80104 /* SolverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolverView.h; sourceTree = "<group>"; };
+		F544515106953F1601A80104 /* SolverView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SolverView.mm; sourceTree = "<group>"; };
+		F592A9ED0693F60301A80104 /* card_2c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_2c.gif; path = cards/card_2c.gif; sourceTree = "<group>"; };
+		F592A9EE0693F60301A80104 /* card_2d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_2d.gif; path = cards/card_2d.gif; sourceTree = "<group>"; };
+		F592A9EF0693F60301A80104 /* card_2h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_2h.gif; path = cards/card_2h.gif; sourceTree = "<group>"; };
+		F592A9F00693F60301A80104 /* card_2s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_2s.gif; path = cards/card_2s.gif; sourceTree = "<group>"; };
+		F592A9F10693F60301A80104 /* card_3c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_3c.gif; path = cards/card_3c.gif; sourceTree = "<group>"; };
+		F592A9F20693F60301A80104 /* card_3d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_3d.gif; path = cards/card_3d.gif; sourceTree = "<group>"; };
+		F592A9F30693F60301A80104 /* card_3h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_3h.gif; path = cards/card_3h.gif; sourceTree = "<group>"; };
+		F592A9F40693F60301A80104 /* card_3s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_3s.gif; path = cards/card_3s.gif; sourceTree = "<group>"; };
+		F592A9F50693F60301A80104 /* card_4c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_4c.gif; path = cards/card_4c.gif; sourceTree = "<group>"; };
+		F592A9F60693F60301A80104 /* card_4d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_4d.gif; path = cards/card_4d.gif; sourceTree = "<group>"; };
+		F592A9F70693F60301A80104 /* card_4h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_4h.gif; path = cards/card_4h.gif; sourceTree = "<group>"; };
+		F592A9F80693F60301A80104 /* card_4s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_4s.gif; path = cards/card_4s.gif; sourceTree = "<group>"; };
+		F592A9F90693F60301A80104 /* card_5c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_5c.gif; path = cards/card_5c.gif; sourceTree = "<group>"; };
+		F592A9FA0693F60301A80104 /* card_5d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_5d.gif; path = cards/card_5d.gif; sourceTree = "<group>"; };
+		F592A9FB0693F60301A80104 /* card_5h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_5h.gif; path = cards/card_5h.gif; sourceTree = "<group>"; };
+		F592A9FC0693F60301A80104 /* card_5s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_5s.gif; path = cards/card_5s.gif; sourceTree = "<group>"; };
+		F592A9FD0693F60301A80104 /* card_6c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_6c.gif; path = cards/card_6c.gif; sourceTree = "<group>"; };
+		F592A9FE0693F60301A80104 /* card_6d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_6d.gif; path = cards/card_6d.gif; sourceTree = "<group>"; };
+		F592A9FF0693F60301A80104 /* card_6h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_6h.gif; path = cards/card_6h.gif; sourceTree = "<group>"; };
+		F592AA000693F60301A80104 /* card_6s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_6s.gif; path = cards/card_6s.gif; sourceTree = "<group>"; };
+		F592AA010693F60301A80104 /* card_7c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_7c.gif; path = cards/card_7c.gif; sourceTree = "<group>"; };
+		F592AA020693F60301A80104 /* card_7d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_7d.gif; path = cards/card_7d.gif; sourceTree = "<group>"; };
+		F592AA030693F60301A80104 /* card_7h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_7h.gif; path = cards/card_7h.gif; sourceTree = "<group>"; };
+		F592AA040693F60301A80104 /* card_7s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_7s.gif; path = cards/card_7s.gif; sourceTree = "<group>"; };
+		F592AA050693F60301A80104 /* card_8c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_8c.gif; path = cards/card_8c.gif; sourceTree = "<group>"; };
+		F592AA060693F60301A80104 /* card_8d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_8d.gif; path = cards/card_8d.gif; sourceTree = "<group>"; };
+		F592AA070693F60301A80104 /* card_8h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_8h.gif; path = cards/card_8h.gif; sourceTree = "<group>"; };
+		F592AA080693F60301A80104 /* card_8s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_8s.gif; path = cards/card_8s.gif; sourceTree = "<group>"; };
+		F592AA090693F60301A80104 /* card_9c.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_9c.gif; path = cards/card_9c.gif; sourceTree = "<group>"; };
+		F592AA0A0693F60301A80104 /* card_9d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_9d.gif; path = cards/card_9d.gif; sourceTree = "<group>"; };
+		F592AA0B0693F60301A80104 /* card_9h.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_9h.gif; path = cards/card_9h.gif; sourceTree = "<group>"; };
+		F592AA0C0693F60301A80104 /* card_9s.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = card_9s.gif; path = cards/card_9s.gif; sourceTree = "<group>"; };
+		F5DD5786069FCADF01A80104 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		F5DD578A069FD07701A80104 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		F5DD578C069FD07F01A80104 /* backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backward.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9EF5D551A9D97E5007ED0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EF5DC11A9D9A80007ED0E7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9EF5D671A9D97E6007ED0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F51450500690B6E301A80104 /* PreferenceController.mm */,
+				F51450550690B6FB01A80104 /* AppController.mm */,
+				F52360B10696574E01A80104 /* CardManager.mm */,
+				F514289B06977B0201A80104 /* DeckView.mm */,
+				F544515106953F1601A80104 /* SolverView.mm */,
+				F516D62906A22C6B01A80104 /* SolveTask.mm */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF5D581A9D97E5007ED0E7 /* Freecell Solver.app */,
+				B9EF5D6A1A9D97E6007ED0E7 /* Freecell SolverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* FreeCell Solver */ = {
+			isa = PBXGroup;
+			children = (
+				F51451480690C01F01A80104 /* Headers */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				B9EF5D591A9D97E5007ED0E7 /* Freecell Solver */,
+				B9EF5D6D1A9D97E6007ED0E7 /* Freecell SolverTests */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "FreeCell Solver";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				F51451590690D46001A80104 /* Debug.cpp */,
+				F514515A0690D46001A80104 /* FreeCells.cpp */,
+				F514515B0690D46001A80104 /* Solve FreeCell.cpp */,
+				F514515C0690D46001A80104 /* Tableau.cpp */,
+				F512D63906926D9C01A80104 /* FCSFileHandler.mm */,
+				F512E0DC06BB734E01A80104 /* FreeCellGame.cpp */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F592A9EC0693F5F401A80104 /* card images */,
+				F5DD578A069FD07701A80104 /* pause.png */,
+				F5DD578C069FD07F01A80104 /* backward.png */,
+				F5DD5786069FCADF01A80104 /* forward.png */,
+				F520DC350693F05A01A80104 /* Credits.rtf */,
+				29B97318FDCFA39411CA2CEA /* MainWindow.nib */,
+				F51C8BA1068BF24E01A80104 /* Preferences.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9EF5D591A9D97E5007ED0E7 /* Freecell Solver */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF5D611A9D97E5007ED0E7 /* Images.xcassets */,
+				B9EF5D5A1A9D97E5007ED0E7 /* Supporting Files */,
+			);
+			path = "Freecell Solver";
+			sourceTree = "<group>";
+		};
+		B9EF5D5A1A9D97E5007ED0E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF5D5B1A9D97E5007ED0E7 /* Info.plist */,
+				B9EF5D5F1A9D97E5007ED0E7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9EF5D6D1A9D97E6007ED0E7 /* Freecell SolverTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF5D701A9D97E6007ED0E7 /* Freecell_SolverTests.m */,
+				B9EF5D6E1A9D97E6007ED0E7 /* Supporting Files */,
+			);
+			path = "Freecell SolverTests";
+			sourceTree = "<group>";
+		};
+		B9EF5D6E1A9D97E6007ED0E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF5D6F1A9D97E6007ED0E7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F51451480690C01F01A80104 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F51450510690B6E301A80104 /* PreferenceController.h */,
+				F51450540690B6FB01A80104 /* AppController.h */,
+				F51451490690C04F01A80104 /* Card.h */,
+				F514514A0690C04F01A80104 /* CardMove.h */,
+				F514514B0690C04F01A80104 /* CardSuit.h */,
+				F514514C0690C04F01A80104 /* Debug.h */,
+				F514514D0690C04F01A80104 /* FreeCells.h */,
+				F514514E0690C04F01A80104 /* Location.h */,
+				F514514F0690C04F01A80104 /* Tableau.h */,
+				F544514E06953DB001A80104 /* UIConstants.h */,
+				F52360B00696574E01A80104 /* CardManager.h */,
+				F514289A06977B0201A80104 /* DeckView.h */,
+				F544515006953F1601A80104 /* SolverView.h */,
+				F512D63806926D9C01A80104 /* FCSFileHandler.h */,
+				F516D62806A22C6B01A80104 /* SolveTask.h */,
+				B9EF5DC21A9D9E10007ED0E7 /* Solve FreeCell.h */,
+				F512E0DE06BB735801A80104 /* FreeCellGame.h */,
+				F50AA3E106CF3F2701A80104 /* MoveScorePair.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		F592A9EC0693F5F401A80104 /* card images */ = {
+			isa = PBXGroup;
+			children = (
+				F51428A60697896301A80104 /* card_1c.gif */,
+				F51428A70697896301A80104 /* card_1d.gif */,
+				F51428A80697896301A80104 /* card_1h.gif */,
+				F51428A90697896301A80104 /* card_1s.gif */,
+				F592A9ED0693F60301A80104 /* card_2c.gif */,
+				F592A9EE0693F60301A80104 /* card_2d.gif */,
+				F592A9EF0693F60301A80104 /* card_2h.gif */,
+				F592A9F00693F60301A80104 /* card_2s.gif */,
+				F592A9F10693F60301A80104 /* card_3c.gif */,
+				F592A9F20693F60301A80104 /* card_3d.gif */,
+				F592A9F30693F60301A80104 /* card_3h.gif */,
+				F592A9F40693F60301A80104 /* card_3s.gif */,
+				F592A9F50693F60301A80104 /* card_4c.gif */,
+				F592A9F60693F60301A80104 /* card_4d.gif */,
+				F592A9F70693F60301A80104 /* card_4h.gif */,
+				F592A9F80693F60301A80104 /* card_4s.gif */,
+				F592A9F90693F60301A80104 /* card_5c.gif */,
+				F592A9FA0693F60301A80104 /* card_5d.gif */,
+				F592A9FB0693F60301A80104 /* card_5h.gif */,
+				F592A9FC0693F60301A80104 /* card_5s.gif */,
+				F592A9FD0693F60301A80104 /* card_6c.gif */,
+				F592A9FE0693F60301A80104 /* card_6d.gif */,
+				F592A9FF0693F60301A80104 /* card_6h.gif */,
+				F592AA000693F60301A80104 /* card_6s.gif */,
+				F592AA010693F60301A80104 /* card_7c.gif */,
+				F592AA020693F60301A80104 /* card_7d.gif */,
+				F592AA030693F60301A80104 /* card_7h.gif */,
+				F592AA040693F60301A80104 /* card_7s.gif */,
+				F592AA050693F60301A80104 /* card_8c.gif */,
+				F592AA060693F60301A80104 /* card_8d.gif */,
+				F592AA070693F60301A80104 /* card_8h.gif */,
+				F592AA080693F60301A80104 /* card_8s.gif */,
+				F592AA090693F60301A80104 /* card_9c.gif */,
+				F592AA0A0693F60301A80104 /* card_9d.gif */,
+				F592AA0B0693F60301A80104 /* card_9h.gif */,
+				F592AA0C0693F60301A80104 /* card_9s.gif */,
+				F514287C069778B901A80104 /* card_10c.gif */,
+				F514287D069778B901A80104 /* card_10d.gif */,
+				F514287E069778B901A80104 /* card_10h.gif */,
+				F514287F069778B901A80104 /* card_10s.gif */,
+				F5142880069778B901A80104 /* card_11c.gif */,
+				F5142881069778B901A80104 /* card_11d.gif */,
+				F5142882069778B901A80104 /* card_11h.gif */,
+				F5142883069778B901A80104 /* card_11s.gif */,
+				F5142884069778B901A80104 /* card_12c.gif */,
+				F5142885069778B901A80104 /* card_12d.gif */,
+				F5142886069778B901A80104 /* card_12h.gif */,
+				F5142887069778B901A80104 /* card_12s.gif */,
+				F5142888069778B901A80104 /* card_13c.gif */,
+				F51DBA3D069BACD301A80104 /* card_13d.gif */,
+				F5142889069778B901A80104 /* card_13h.gif */,
+				F514288A069778B901A80104 /* card_13s.gif */,
+			);
+			name = "card images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9EF5D571A9D97E5007ED0E7 /* Freecell Solver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9EF5D721A9D97E6007ED0E7 /* Build configuration list for PBXNativeTarget "Freecell Solver" */;
+			buildPhases = (
+				B9EF5D541A9D97E5007ED0E7 /* Sources */,
+				B9EF5D551A9D97E5007ED0E7 /* Frameworks */,
+				B9EF5D561A9D97E5007ED0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Freecell Solver";
+			productName = "Freecell Solver";
+			productReference = B9EF5D581A9D97E5007ED0E7 /* Freecell Solver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9EF5D691A9D97E6007ED0E7 /* Freecell SolverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9EF5D761A9D97E6007ED0E7 /* Build configuration list for PBXNativeTarget "Freecell SolverTests" */;
+			buildPhases = (
+				B9EF5D661A9D97E6007ED0E7 /* Sources */,
+				B9EF5D671A9D97E6007ED0E7 /* Frameworks */,
+				B9EF5D681A9D97E6007ED0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9EF5D6C1A9D97E6007ED0E7 /* PBXTargetDependency */,
+			);
+			name = "Freecell SolverTests";
+			productName = "Freecell SolverTests";
+			productReference = B9EF5D6A1A9D97E6007ED0E7 /* Freecell SolverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					B9EF5D571A9D97E5007ED0E7 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B9EF5D691A9D97E6007ED0E7 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B9EF5D571A9D97E5007ED0E7;
+					};
+				};
+			};
+			buildConfigurationList = DFA6E791098C5826008D1EEA /* Build configuration list for PBXProject "FreeCell Solver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* FreeCell Solver */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9EF5D571A9D97E5007ED0E7 /* Freecell Solver */,
+				B9EF5D691A9D97E6007ED0E7 /* Freecell SolverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9EF5D561A9D97E5007ED0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EF5DA01A9D9A69007ED0E7 /* card_5s.gif in Resources */,
+				B9EF5DAF1A9D9A69007ED0E7 /* card_9h.gif in Resources */,
+				B9EF5DBA1A9D9A69007ED0E7 /* card_12d.gif in Resources */,
+				B9EF5DAE1A9D9A69007ED0E7 /* card_9d.gif in Resources */,
+				B9EF5DB61A9D9A69007ED0E7 /* card_11d.gif in Resources */,
+				B9EF5DBD1A9D9A69007ED0E7 /* card_13c.gif in Resources */,
+				B9EF5DA61A9D9A69007ED0E7 /* card_7d.gif in Resources */,
+				B9EF5DAA1A9D9A69007ED0E7 /* card_8d.gif in Resources */,
+				B9EF5DC01A9D9A69007ED0E7 /* card_13s.gif in Resources */,
+				B9EF5D9A1A9D9A69007ED0E7 /* card_4d.gif in Resources */,
+				B9EF5DBF1A9D9A69007ED0E7 /* card_13h.gif in Resources */,
+				B9EF5D9E1A9D9A69007ED0E7 /* card_5d.gif in Resources */,
+				B9EF5DA31A9D9A69007ED0E7 /* card_6h.gif in Resources */,
+				B9EF5DA21A9D9A69007ED0E7 /* card_6d.gif in Resources */,
+				B9EF5D8D1A9D9A69007ED0E7 /* card_1c.gif in Resources */,
+				B9EF5D8A1A9D9A2F007ED0E7 /* MainWindow.nib in Resources */,
+				B9EF5DBE1A9D9A69007ED0E7 /* card_13d.gif in Resources */,
+				B9EF5D891A9D9A29007ED0E7 /* Credits.rtf in Resources */,
+				B9EF5DB51A9D9A69007ED0E7 /* card_11c.gif in Resources */,
+				B9EF5D901A9D9A69007ED0E7 /* card_1s.gif in Resources */,
+				B9EF5D861A9D9A23007ED0E7 /* pause.png in Resources */,
+				B9EF5DB91A9D9A69007ED0E7 /* card_12c.gif in Resources */,
+				B9EF5D9C1A9D9A69007ED0E7 /* card_4s.gif in Resources */,
+				B9EF5D8F1A9D9A69007ED0E7 /* card_1h.gif in Resources */,
+				B9EF5DA91A9D9A69007ED0E7 /* card_8c.gif in Resources */,
+				B9EF5DB31A9D9A69007ED0E7 /* card_10h.gif in Resources */,
+				B9EF5D991A9D9A69007ED0E7 /* card_4c.gif in Resources */,
+				B9EF5D871A9D9A23007ED0E7 /* backward.png in Resources */,
+				B9EF5D921A9D9A69007ED0E7 /* card_2d.gif in Resources */,
+				B9EF5D9D1A9D9A69007ED0E7 /* card_5c.gif in Resources */,
+				B9EF5DA71A9D9A69007ED0E7 /* card_7h.gif in Resources */,
+				B9EF5DB81A9D9A69007ED0E7 /* card_11s.gif in Resources */,
+				B9EF5DA41A9D9A69007ED0E7 /* card_6s.gif in Resources */,
+				B9EF5D8B1A9D9A2F007ED0E7 /* Preferences.nib in Resources */,
+				B9EF5D981A9D9A69007ED0E7 /* card_3s.gif in Resources */,
+				B9EF5D9F1A9D9A69007ED0E7 /* card_5h.gif in Resources */,
+				B9EF5D621A9D97E5007ED0E7 /* Images.xcassets in Resources */,
+				B9EF5DB41A9D9A69007ED0E7 /* card_10s.gif in Resources */,
+				B9EF5DB71A9D9A69007ED0E7 /* card_11h.gif in Resources */,
+				B9EF5DB21A9D9A69007ED0E7 /* card_10d.gif in Resources */,
+				B9EF5DA51A9D9A69007ED0E7 /* card_7c.gif in Resources */,
+				B9EF5D9B1A9D9A69007ED0E7 /* card_4h.gif in Resources */,
+				B9EF5D881A9D9A23007ED0E7 /* forward.png in Resources */,
+				B9EF5D911A9D9A69007ED0E7 /* card_2c.gif in Resources */,
+				B9EF5D971A9D9A69007ED0E7 /* card_3h.gif in Resources */,
+				B9EF5D961A9D9A69007ED0E7 /* card_3d.gif in Resources */,
+				B9EF5DA11A9D9A69007ED0E7 /* card_6c.gif in Resources */,
+				B9EF5D941A9D9A69007ED0E7 /* card_2s.gif in Resources */,
+				B9EF5D951A9D9A69007ED0E7 /* card_3c.gif in Resources */,
+				B9EF5DAC1A9D9A69007ED0E7 /* card_8s.gif in Resources */,
+				B9EF5DB11A9D9A69007ED0E7 /* card_10c.gif in Resources */,
+				B9EF5DAD1A9D9A69007ED0E7 /* card_9c.gif in Resources */,
+				B9EF5D931A9D9A69007ED0E7 /* card_2h.gif in Resources */,
+				B9EF5DB01A9D9A69007ED0E7 /* card_9s.gif in Resources */,
+				B9EF5DA81A9D9A69007ED0E7 /* card_7s.gif in Resources */,
+				B9EF5DAB1A9D9A69007ED0E7 /* card_8h.gif in Resources */,
+				B9EF5DBB1A9D9A69007ED0E7 /* card_12h.gif in Resources */,
+				B9EF5D8E1A9D9A69007ED0E7 /* card_1d.gif in Resources */,
+				B9EF5DBC1A9D9A69007ED0E7 /* card_12s.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9EF5D681A9D97E6007ED0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9EF5D541A9D97E5007ED0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EF5D7B1A9D99FE007ED0E7 /* AppController.mm in Sources */,
+				B9EF5D801A9D9A0B007ED0E7 /* Debug.cpp in Sources */,
+				B9EF5D7A1A9D99FE007ED0E7 /* PreferenceController.mm in Sources */,
+				B9EF5D601A9D97E5007ED0E7 /* main.m in Sources */,
+				B9EF5D7E1A9D99FE007ED0E7 /* SolverView.mm in Sources */,
+				B9EF5D7F1A9D99FE007ED0E7 /* SolveTask.mm in Sources */,
+				B9EF5D7D1A9D99FE007ED0E7 /* DeckView.mm in Sources */,
+				B9EF5D851A9D9A0B007ED0E7 /* FreeCellGame.cpp in Sources */,
+				B9EF5D841A9D9A0B007ED0E7 /* FCSFileHandler.mm in Sources */,
+				B9EF5D7C1A9D99FE007ED0E7 /* CardManager.mm in Sources */,
+				B9EF5D821A9D9A0B007ED0E7 /* Solve FreeCell.cpp in Sources */,
+				B9EF5D811A9D9A0B007ED0E7 /* FreeCells.cpp in Sources */,
+				B9EF5D831A9D9A0B007ED0E7 /* Tableau.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9EF5D661A9D97E6007ED0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EF5D711A9D97E6007ED0E7 /* Freecell_SolverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9EF5D6C1A9D97E6007ED0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9EF5D571A9D97E5007ED0E7 /* Freecell Solver */;
+			targetProxy = B9EF5D6B1A9D97E6007ED0E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29B97318FDCFA39411CA2CEA /* MainWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* MainWindow.nib */,
+			);
+			name = MainWindow.nib;
+			sourceTree = "<group>";
+		};
+		F51C8BA1068BF24E01A80104 /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51C8BA2068BF24E01A80104 /* English */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+		F520DC350693F05A01A80104 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F520DC360693F05A01A80104 /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9EF5D731A9D97E6007ED0E7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Freecell Solver/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DSOLVEFREECELL_LIB_THREADED";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Development;
+		};
+		B9EF5D741A9D97E6007ED0E7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Freecell Solver/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-DSOLVEFREECELL_LIB_THREADED";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Deployment;
+		};
+		B9EF5D751A9D97E6007ED0E7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Freecell Solver/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-DSOLVEFREECELL_LIB_THREADED";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Default;
+		};
+		B9EF5D771A9D97E6007ED0E7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Freecell SolverTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freecell Solver.app/Contents/MacOS/Freecell Solver";
+			};
+			name = Development;
+		};
+		B9EF5D781A9D97E6007ED0E7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Freecell SolverTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freecell Solver.app/Contents/MacOS/Freecell Solver";
+			};
+			name = Deployment;
+		};
+		B9EF5D791A9D97E6007ED0E7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Freecell SolverTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freecell Solver.app/Contents/MacOS/Freecell Solver";
+			};
+			name = Default;
+		};
+		DFA6E792098C5826008D1EEA /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+			};
+			name = Development;
+		};
+		DFA6E793098C5826008D1EEA /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+			};
+			name = Deployment;
+		};
+		DFA6E794098C5826008D1EEA /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9EF5D721A9D97E6007ED0E7 /* Build configuration list for PBXNativeTarget "Freecell Solver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9EF5D731A9D97E6007ED0E7 /* Development */,
+				B9EF5D741A9D97E6007ED0E7 /* Deployment */,
+				B9EF5D751A9D97E6007ED0E7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9EF5D761A9D97E6007ED0E7 /* Build configuration list for PBXNativeTarget "Freecell SolverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9EF5D771A9D97E6007ED0E7 /* Development */,
+				B9EF5D781A9D97E6007ED0E7 /* Deployment */,
+				B9EF5D791A9D97E6007ED0E7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DFA6E791098C5826008D1EEA /* Build configuration list for PBXProject "FreeCell Solver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFA6E792098C5826008D1EEA /* Development */,
+				DFA6E793098C5826008D1EEA /* Deployment */,
+				DFA6E794098C5826008D1EEA /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
